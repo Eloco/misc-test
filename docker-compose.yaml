@@ -1,0 +1,7 @@
+version: '3.3'
+services:
+    maubot:
+        restart: unless-stopped
+        ports:
+            - '8080:29316'
+        image: 'dock.mau.dev/maubot/maubot:<version>'
